@@ -1,3 +1,4 @@
+package modelo;
 
 public class CalculadorDeImposto {
 
@@ -7,7 +8,7 @@ public class CalculadorDeImposto {
 		double valorImposto = tributavel.getValorImposto();
 		this.totalImposto += valorImposto;
 	}
-	
+
 	public double getTotalImposto() {
 		return totalImposto;
 	}
