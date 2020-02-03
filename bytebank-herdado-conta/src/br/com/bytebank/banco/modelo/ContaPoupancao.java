@@ -1,4 +1,4 @@
-package modelo;
+package br.com.bytebank.banco.modelo;
 public class ContaPoupancao extends Conta {
 
 	public ContaPoupancao(int agencia, int numero) {

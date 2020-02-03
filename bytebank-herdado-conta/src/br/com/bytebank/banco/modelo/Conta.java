@@ -1,4 +1,11 @@
-package modelo;
+package br.com.bytebank.banco.modelo;
+
+/**
+ * Classe representa a moldura de uma Conta
+ * 
+ * @author gdarlan
+ *
+ */
 public abstract class Conta {
 
 	protected double saldo;
@@ -7,9 +14,15 @@ public abstract class Conta {
 	private Cliente titular;
 	private static int total;
 
+	/**
+	 * Construtor para inicializar o objeto Conta a partir da agencia e numero
+	 * 
+	 * @param agencia
+	 * @param numero
+	 */
 	public Conta(int agencia, int numero) {
 		Conta.total++;
-		System.out.println("o total de contas Ã©: " + Conta.total);
+		System.out.println("o total de contas é: " + Conta.total);
 		this.agencia = agencia;
 		this.numero = numero;
 //		System.out.println("criando conta"+this.numero);
@@ -17,6 +30,13 @@ public abstract class Conta {
 
 	public abstract void deposita(double valor);
 
+	/**
+	 * Valor precisa ser maior que o saldo
+	 * 
+	 * @param valor
+	 * @throws SaldoInsuficienteException
+	 */
+	
 	public void saca(double valor) throws SaldoInsuficienteException {
 		if (this.saldo < valor) {
 			throw new SaldoInsuficienteException("Saldo insuficiente:" + this.saldo + ", Valor: " + valor);
