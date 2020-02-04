@@ -1,6 +1,6 @@
 package br.com.bytebank.banco.teste;
 
-public class Teste {
+public class TesteArrayDePrimitivos {
 
 	// Array
 	public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class Teste {
 		for (int i = 0; i < idades.length; i++) {
 			idades[i] = i * i;
 		}
-		
+
 		for (int i = 0; i < idades.length; i++) {
 			System.out.println(idades[i]);
 		}
