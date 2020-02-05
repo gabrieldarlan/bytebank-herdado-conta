@@ -36,4 +36,10 @@ public class Cliente {
 		this.profissao = profissao;
 	}
 
+	@Override
+	public String toString() {
+		return "Cliente [nome=" + nome + ", cpf=" + cpf + ", profissao=" + profissao + "]";
+	}
+
+	
 }

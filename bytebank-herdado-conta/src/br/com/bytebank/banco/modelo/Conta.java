@@ -21,8 +21,8 @@ public abstract class Conta {
 	 * @param numero
 	 */
 	public Conta(int agencia, int numero) {
-		Conta.total++;
-		System.out.println("o total de contas é: " + Conta.total);
+//		Conta.total++;
+//		System.out.println("o total de contas é: " + Conta.total);
 		this.agencia = agencia;
 		this.numero = numero;
 //		System.out.println("criando conta"+this.numero);
