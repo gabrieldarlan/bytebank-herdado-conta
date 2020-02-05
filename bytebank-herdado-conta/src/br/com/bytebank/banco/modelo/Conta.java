@@ -36,7 +36,7 @@ public abstract class Conta {
 	 * @param valor
 	 * @throws SaldoInsuficienteException
 	 */
-	
+
 	public void saca(double valor) throws SaldoInsuficienteException {
 		if (this.saldo < valor) {
 			throw new SaldoInsuficienteException("Saldo insuficiente:" + this.saldo + ", Valor: " + valor);
@@ -80,9 +80,23 @@ public abstract class Conta {
 	public static int getTotal() {
 		return Conta.total;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Número: " + this.numero + " Agencia: " + this.agencia;
+	}
+
+	@Override
+	public boolean equals(Object ref) {
+		Conta outra = (Conta) ref;
+		
+		if (this.agencia != outra.agencia) {
+			return false;
+		}
+
+		if (this.numero != outra.numero) {
+			return false;
+		}
+		return true;
 	}
 }
