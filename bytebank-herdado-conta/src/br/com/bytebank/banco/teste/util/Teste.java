@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Teste {
 	
-	// AULA 06 - 01 Autoboxing e Unboxing
+	// AULA 06 - 02 Métodos da classe Integer
 	public static void main(String[] args) {
 
 		int[] idades = new int[5];
@@ -13,7 +13,7 @@ public class Teste {
 		String[] nomes = new String[5];
 
 		int idade = 29;// Integer
-		Integer idadeRef = new Integer(29);
+		Integer idadeRef = Integer.valueOf(idade);
 		List<Integer> numeros = new ArrayList<Integer>();
 		numeros.add(idadeRef);
 
