@@ -1,22 +1,17 @@
 package br.com.bytebank.banco.teste.util;
 
-import java.util.ArrayList;
+import java.util.List;
+import java.util.Vector;
 
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 
 public class TesteArrayListEquals {
 
+	// AULA 5 ATIVIDADE 1 COMPLETO - CONTINUAR DA AULA 4
 	public static void main(String[] args) {
 
-//		ContaCorrente cc1 = new ContaCorrente(22, 22);
-//		ContaCorrente cc2 = new ContaCorrente(22, 22);
-//		
-//		boolean igual = cc1.ehIgual(cc2);
-//		System.out.println(igual);
-//		
-		
-		ArrayList<Conta> lista = new ArrayList<Conta>();
+		List<Conta> lista = new Vector<Conta>();
 
 		ContaCorrente cc = new ContaCorrente(22, 11);
 		lista.add(cc);
