@@ -1,17 +1,20 @@
 package br.com.bytebank.banco.modelo;
 
+import java.io.Serializable;
+
 /**
  * Classe representa a moldura de uma Conta
  * 
  * @author gdarlan
  *
  */
-public abstract class Conta extends Object implements Comparable<Conta> {
+public abstract class Conta extends Object implements Comparable<Conta>, Serializable {
 
+	private static final long serialVersionUID = 1L;
 	protected double saldo;
 	private int agencia;
 	private int numero;
-	private Cliente titular;
+	private transient Cliente titular;
 	private static int total;
 
 	/**

@@ -1,5 +1,9 @@
 package br.com.bytebank.banco.modelo;
+
 public class ContaCorrente extends Conta implements Tributavel {
+
+
+	private static final long serialVersionUID = 1L;
 
 	public ContaCorrente(int agencia, int numero) {
 		super(agencia, numero);
